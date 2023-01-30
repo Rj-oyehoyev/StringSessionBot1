@@ -3,6 +3,6 @@ SQLAlchemy
 psycopg2-binary
 Telethon
 pyromod
-pyrogram1
+git+https://github.com/Rj-oyehoyev/pyrogram1
 TgCrypto
 pyrogram
