@@ -31,16 +31,11 @@ jobs:
          with:
               access_token: ${{ github.token }}
 
-       - name: cloning repo and install
-         continue-on-error: true
-         run: |
-           git clone https://github.com/Rj-oyehoyev/StringSessionBot1.git bot && cd bot && pip3 install -r requirements.txt
-           pwd
-       - name: Running
+       - name: cloning repo , install and running
          timeout-minutes: 350
          continue-on-error: true
          run: |
-           curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
+           git clone https://github.com/Rj-oyehoyev/StringSessionBot1.git bot && cd bot && pip3 install -r requirements.txt
            pwd
            cd bot
            python3 bot.py
